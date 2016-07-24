@@ -1,0 +1,21 @@
+/* = Fonts.
+-------------------------------------------------------------- */
+/*@import url(https://fonts.googleapis.com/css?family=Slabo+27px);*/
+
+@font-face {
+	font-family: JenniferLynne;
+	src: url("../fonts/JenniferLynne.eot");
+	src: url("../fonts/JenniferLynne.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/JenniferLynne.ttf") format("truetype"),
+		url("../fonts/JenniferLynne.woff") format("woff"),
+		url("../fonts/JenniferLynne.woff2") format("woff2"),
+		url("../fonts/JenniferLynne.otf") format("otf"),
+		url("../fonts/JenniferLynne.svg") format("svg");
+}
+
+/* = Main styles.
+-------------------------------------------------------------- */
+.block_01 p {
+	/*font-family: 'Slabo 27px', serif;*/
+	font-family: JenniferLynne;
+}

@@ -1,0 +1,38 @@
+div {
+	margin: 50px auto;
+}
+
+.block_01 {
+	width: 400px;
+	height: 267px;
+	/*background-image: url('img_01.jpg');*/
+	/*background-image: url('img_01.jpg'), url('img_02.png');*/
+	background-image: url('img_02.png'), url('img_01.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom right, center;
+}
+.block_02 {
+	width: 500px;
+	height: 267px;
+	/*background: url('img_02.png') center no-repeat, #ff0000 url('img_01.jpg') center no-repeat;*/
+	background: #ff0000 url('img_01.jpg') center no-repeat;
+	background: url('img_02.png') center no-repeat, #ff0000 url('img_01.jpg') center no-repeat;
+}
+.block_03 {
+	width: 400px;
+	height: 267px;
+	background:
+		url('img_02.png') top no-repeat,
+		url('img_02.png') left no-repeat,
+		url('img_02.png') center no-repeat,
+		url('img_02.png') right no-repeat,
+		url('img_02.png') bottom no-repeat,
+		url('img_01.jpg') center no-repeat;
+	background-size: 100px 50px, 50px 50px, 100px 50px, 50px 50px, 100px 50px, auto;
+}
+.block_04 {
+	width: 400px;
+	height: 267px;
+	border: 10px solid #000;
+	background: #ff0000 url('img_02.png') no-repeat;
+}

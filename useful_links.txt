@@ -1,0 +1,25 @@
+part_01
+	https://htmlacademy.ru/blog/64-about-normalize-css
+
+	https://necolas.github.io/normalize.css/latest/normalize.css
+
+part_02
+
+	http://caniuse.com/ - підтримка властивостей
+
+	http://fmbip.com/ - показує всі властивості того браузеру, за допомогою якого ми зайшли
+
+part_03
+
+	border-image-generator
+	border-image.com/
+
+part_05
+
+	http://www.1001freefonts.com/
+
+	https://www.google.com/fonts
+
+	(http://www.font2web.com/ - конвертер шрифтів)
+
+	https://onlinefontconverter.com/ - конвертер шрифтів

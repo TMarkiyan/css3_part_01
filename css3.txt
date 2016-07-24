@@ -1,0 +1,119 @@
+1. normalize.css.
+
+2. Фон.
+
+	background-image.
+
+		css3 дозволяє задавати декілька фонових картинок для div
+
+		background-image: url('img_01.jpg'), url('img_02.png');
+		(Нічого не побачимо)
+
+		background-image: url('img_02.png'), url('img_01.jpg');
+		(Міняємо місцями два посилання
+		Верхнє зображення має йти в порядку черговості першим)
+
+		background: url('img_02.png') center no-repeat, url('img_01.jpg') center no-repeat;
+		(Скорочена назва)
+
+		background: url('img_02.png') center no-repeat, #ff0000 url('img_01.jpg') center no-repeat;
+		(Фоновий колір ми можемо підкладати тільки під саме останнє зображення)
+
+		background: #ff0000 url('img_01.jpg') center no-repeat;
+		background: url('img_02.png') center no-repeat, #ff0000 url('img_01.jpg') center no-repeat;
+		(Багато фонів не підтримує IE8)
+
+	background-size.
+
+	border.
+
+	background-clip (http://www.w3schools.com/).
+
+3. Заокруглені кути, border-и, тіні.
+
+	border-top-left-radius: 20px 10px;
+	border-top-right-radius: 20px 10px;
+	border-bottom-right-radius: 20px 10px;
+	border-bottom-left-radius: 20px 10px;
+	(Повний запис заокруглених кутів
+	Можемо окремо 'скругляти' горизонтальну і вертикальну складову - два значення)
+
+	border-radius: 20px;
+	(Скорочений запис)
+
+	border-image: url(border_img.png) 22 repeat;
+	(Ставимо зображення замість border, яке розтягується по всьому нашому прямокутнику
+	22 - значення border рамки - це і є висота одного ромба
+	repeat - повтор ромба
+	round - заокруглення, щоб були цілі кусочки)
+
+	box-shadow: 10px 10px;
+	(Стандартно 2 значення - зміщення по горизонталі і по вертикалі)
+
+	box-shadow: 10px 10px 5px;
+	(3-є значення - розмиття)
+
+	box-shadow: 10px 10px 15px 10px #ff0000;
+	(+ зжимання-розтягування і колір розмиття
+	10px - ширше, -10px вужче)
+
+	box-shadow: -10px -10px 15px -10px #ff0000;
+	(Тінь зверху)
+
+	box-shadow: 15px 15px 15px -10px #ff0000, inset 10px 10px 10px -5px #009900;
+	(Подвійна тінь, де друга - внутрішня)
+
+4. Прозорості.
+
+	opacity: 0.4; (батьківський)
+	(Наслідується, і всі дочірні елементи стають прозорими
+	Якщо дочірньому вказати opacity: 1; - нічого не змінюється
+	Значення дочірнього не може перевищувати значення батьківського)
+
+	opacity: 0.4; (дочірній)
+	(Стає прозорим разом з текстом)
+
+	color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.4);
+	(Дає змогу все робити окремо)
+
+	color: hsla(0, 94%, 48%, 1);
+	background-color: hsla(360, 0%, 100%, 0.3);
+	(Аналог)
+
+5. Шрифти.
+
+	Види підключення.
+
+		@import
+
+			Сервіс https://www.google.com/fonts
+			(По дефолту стоїть значення Latin
+			Не в усіх браузерах шрифти однаково відображаються - треба бути до цього готовим)
+
+			Обираємо шрифт - Quick-use
+
+			На іншій сторінці шукаємо п. 3 - спосіб підключення 
+
+			<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+			(Копіюємо схожий лінк для HTML)
+
+			@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+			(Або копіюємо схожий лінк для CSS
+			Обираємо цей)
+
+			Шукаємо п. 4
+
+			font-family: 'Slabo 27px', serif;
+			(Прописуємо в CSS)
+
+		@font-face
+
+			Файли знаходяться на нашому сервері
+
+			Як правило, можна знайти файли у форматах .ttf або .eot
+
+			https://onlinefontconverter.com/
+			(Конвертером отримуємо всі формати)
+
+			Якщо format("otf") не вказувати, буде збільшено час завантаження сторінки
